@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:foodie_restaurant/CommonWidgets/Cards/roundedCornerImageCard.dart';
 
 class CuisineListItemRoundedCard extends StatelessWidget {
+  
   String imageUrl;
+  String cuisnineName;
 
-  CuisineListItemRoundedCard({this.imageUrl});
+  CuisineListItemRoundedCard({this.imageUrl,String cuisnineName});
   @override
   Widget build(BuildContext context) {
     return Padding(
