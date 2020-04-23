@@ -18,7 +18,7 @@ class ListViewHorizontal extends StatelessWidget {
       itemCount: 15,
       itemBuilder: (BuildContext context, int index) {
         return GestureDetector(
-          child: CuisineListItemRoundedCard(imageUrl: "https://www.budgetbytes.com/wp-content/uploads/2018/06/BBQ-Tofu-Sliders-above.jpg"),
+          child: CuisineListItemRoundedCard(imageUrl: "https://www.budgetbytes.com/wp-content/uploads/2018/06/BBQ-Tofu-Sliders-above.jpg",),
           onTap:() =>onTapFunction,
           
          // {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:foodie_restaurant/ListViews/listViewvertical.dart';
 
 class ContainerItemVerticalListView extends StatelessWidget {
- 
   //final Text titleText;
   Widget listView;
 
@@ -11,16 +11,9 @@ class ContainerItemVerticalListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height,
       padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-      child: Column(
-        children: <Widget>[
-          
-          Container(
-           height: 300,
-            child: ListViewVertical(),
-          )
-        ],
-      ),
+      child: ListViewVertical(),
     );
   }
 }

@@ -21,7 +21,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   height: 220,
                   padding: EdgeInsets.all(0),
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.redAccent,
                     
                   )),
             ]),

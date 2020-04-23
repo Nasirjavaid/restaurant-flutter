@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class RoundedCornerImageCard extends StatelessWidget {
   String imageUrl;
-  RoundedCornerImageCard({this.imageUrl});
+  double imageHeight,imageWidth,imageRadius;
+  RoundedCornerImageCard({this.imageUrl,this.imageHeight,this.imageWidth,this.imageRadius});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -11,25 +12,27 @@ class RoundedCornerImageCard extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              height: 70,
-              width: 80,
+              height: imageHeight, //70
+              width: imageWidth,    //80
               decoration: BoxDecoration(),
               child: CachedNetworkImage(
                 imageUrl: imageUrl,
                 imageBuilder: (context, imageProvider) => Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(5)),
+                    borderRadius: BorderRadius.all(Radius.circular(imageRadius)),
                     image: DecorationImage(
                         image: imageProvider,
                         fit: BoxFit.cover,
                         colorFilter: ColorFilter.mode(
-                            Colors.black38, BlendMode.colorBurn)),
+                            Colors.black12, BlendMode.difference)
+                            
+                            ),
                   ),
                 ),
                 placeholder: (context, ur) {
                   return SizedBox(
-                      height: 12,
-                      width: 12,
+                      height: 10,
+                      width: 10,
                       child: CircularProgressIndicator(
                         strokeWidth: 2,
                       ));

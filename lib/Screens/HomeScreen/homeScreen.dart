@@ -10,6 +10,9 @@ import 'package:foodie_restaurant/config/bottomNavDestinations.dart';
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
+
+  
+
 }
 
 
@@ -20,13 +23,16 @@ class _HomeScreenState extends State<HomeScreen> {
   final allScreenDestiNations =[
 
     HomeContainer(),
-    MapScreen(),
+    MapScreen(), 
     FavouritesScreen(),
     ProfileScreen(),
+    
   ];
 
   @override
   Widget build(BuildContext context) {
+
+    
     return Scaffold(
       body: SafeArea(
         top: false,
@@ -46,9 +52,9 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         items: allDestinations.map((Destination destination) {
           return BottomNavigationBarItem(
-              icon: Icon(destination.icon,color: Colors.red,),
+              icon: Icon(destination.icon,color: Colors.redAccent,),
               backgroundColor: Colors.white,
-              title: Text(destination.title, style: TextStyle(color:Colors.red,),));
+              title: Text(destination.title, style: TextStyle(color:Colors.redAccent,),));
         }).toList(),
 
       

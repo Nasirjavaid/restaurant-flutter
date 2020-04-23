@@ -23,7 +23,7 @@ class RestaurantItemCard extends StatelessWidget {
                         children: <Widget>[
                           RoundedCornerImageCard(
                             imageUrl:
-                                "https://m.mome.co/thevaros/files/2017/01/thevaros1.jpg",
+                                "https://m.mome.co/thevaros/files/2017/01/thevaros1.jpg", imageHeight: 70,imageWidth: 80,imageRadius: 5,
                           ),
                           Padding(
                               padding: EdgeInsets.only(

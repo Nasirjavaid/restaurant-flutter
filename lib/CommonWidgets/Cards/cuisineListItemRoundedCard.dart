@@ -21,7 +21,7 @@ class CuisineListItemRoundedCard extends StatelessWidget {
                 child: Stack(children: <Widget>[
                   //calling common widget
                   
-                 RoundedCornerImageCard(imageUrl: imageUrl,),
+                 RoundedCornerImageCard(imageUrl: imageUrl,imageHeight: 70,imageRadius: 5,),
                   Positioned.fill(
                       child: Align(
                         alignment: Alignment.bottomCenter,

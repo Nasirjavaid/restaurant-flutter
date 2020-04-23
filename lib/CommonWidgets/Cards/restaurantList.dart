@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_restaurant/CommonWidgets/Cards/restaurantItemCard.dart';
 import 'package:foodie_restaurant/CommonWidgets/MainContainers/containerItemVerticalListview.dart';
 
 
@@ -7,26 +8,28 @@ class RestaurantList extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return  Column(children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(left:8,top:10,right:8),
-              child: Row(
-                children: <Widget>[
-                  Text("Restaurants",
-                      style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18)),
-                  Spacer(),
-                  Text("View All",
-                      style: TextStyle(
-                          color: Colors.red,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 11))
-                ],
+    return  Container(
+      
+
+      child:   
+           ListView.builder(
+          padding: EdgeInsets.only(top: 0.0),
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 0.0,
+                vertical: 0.0,
               ),
-            ),
-           ContainerItemVerticalListView(),
-          ]);
+              child: RestaurantItemCard(),
+            );
+          },
+          itemCount: 19,
+          shrinkWrap: true, // todo comment this out and check the result
+          physics: ClampingScrollPhysics(), // todo comment this out and check the result
+        ));
+
+
+
+
   }
 }

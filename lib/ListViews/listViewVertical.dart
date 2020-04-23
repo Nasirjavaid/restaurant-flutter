@@ -19,6 +19,8 @@ ListViewVertical({this.imageUrl});
       shrinkWrap: true,
       scrollDirection: Axis.vertical,
       itemCount: 15,
+      physics: ClampingScrollPhysics(),
+      
       itemBuilder: (BuildContext context, int index) {
         return GestureDetector(
           child: RestaurantItemCard(imageUrl:imageUrl),
