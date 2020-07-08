@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_restaurant/CommonWidgets/MainContainers/homeContainer.dart';
-import 'package:foodie_restaurant/Screens/Favourites%20Screen/favouritesScreen.dart';
+import 'package:foodie_restaurant/Screens/FavouritesScreen/favouritesScreen.dart';
+
 import 'package:foodie_restaurant/Screens/MapScreen/mapScreen.dart';
-import 'package:foodie_restaurant/Screens/Profile%20Screen/profileScreen.dart';
+import 'package:foodie_restaurant/Screens/ProfileScreen/profileScreen.dart';
+
 import 'package:foodie_restaurant/config/bottomNavDestinations.dart';
 
 
